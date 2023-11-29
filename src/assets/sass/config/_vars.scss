@@ -1,0 +1,20 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+
+$vh-primary: #101010;
+$vh-secondary: #696969;
+$vh-info: #F5F8FF;
+$vh-light:#F6F8FA;
+
+
+
+
+$custom-colors: (
+  "vh-primary": $vh-primary,
+  "vh-secondary": $vh-secondary,
+  "vh-info": $vh-info,
+  "vh-light": $vh-light,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);

@@ -1,0 +1,7 @@
+.cross-center {
+    @include cross-center();
+}
+
+.cross-center-grid {
+    @include cross-center(false);
+}
