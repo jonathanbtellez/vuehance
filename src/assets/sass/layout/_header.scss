@@ -1,22 +1,41 @@
 .main-menu {
+  position: relative;
+  transition: all, ease-in-out, 300;
+
+  &__item {
+    text-decoration: none;
     height: 100%;
-    display: flex;
-    gap: 1rem;
-    transition: all, ease-in-out, 300;
+    transition: all .5s ease-out;
 
-
-    &__item {
-        text-decoration: none;
-        height: 100%;
-        transition: all .5s ease-out;
-
-        &:hover {
-            box-shadow: 0px 2px 0px 0px #111;
-        }
-
+    &:hover {
+      box-shadow: 0px 2px 0px 0px #111;
     }
+  }
+
+  @include media-breakpoint-down(md) {
+    &__content {
+      position: absolute;
+      background-color: white;
+      top: 100%;
+      right: 0;
+      flex-direction: column;
+      height: auto;
+      border-radius: 0 0 1rem 1rem;
+      box-shadow: $box-shadow;
+      padding-left: 0;
+      padding-bottom: 1rem;
+      transition: all linear .3s;
+      transform: scaleY(0);
+      transform-origin: top;
+      min-width: 250px;
+
+      &.show {
+        transform: scaleY(1);
+      }
+    }
+  }
 }
 
 .router-link-active {
-    box-shadow: 0px 2px 0px 0px #111;
+  box-shadow: 0px 2px 0px 0px #111;
 }
