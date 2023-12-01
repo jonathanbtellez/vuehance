@@ -1,5 +1,17 @@
 .mySwiper {
     position: relative;
+    &::before{
+        content: '';
+        height: 100%;
+        width: 100px;
+        background: red;
+    }
+    &::after{
+        content: '';
+        height: 100%;
+        width: 100px;
+        background: red;
+    }
 }
 
 [class*="fa-angle"] {
@@ -14,6 +26,8 @@
     padding-left: 10px;
     padding-right: 10px;
     transition: all .5s ease-in-out;
+
+
 
     &:hover {
         color: rgba($color: #000000, $alpha: 1.0);
