@@ -7,15 +7,18 @@
     height: 100%;
     transition: all .5s ease-out;
   }
-  @include media-breakpoint-up(lg){
+
+  @include media-breakpoint-up(lg) {
     &__item:hover {
       box-shadow: 0px 2px 0px 0px #111;
     }
   }
-  @include media-breakpoint-down(md) {
+
+  @include media-breakpoint-down(lg) {
     &__item {
       width: 80%;
     }
+
     &__content {
       position: absolute;
       background-color: white;
@@ -23,7 +26,6 @@
       flex-direction: column;
       height: auto;
       border-radius: 0 0 1rem 1rem;
-      box-shadow: $box-shadow;
       padding-left: 0;
       padding-bottom: 1rem;
       transition: all linear .3s;
@@ -38,13 +40,12 @@
   }
 }
 
-@include media-breakpoint-up(md) {
-  .router-link-active {
-    box-shadow: 0px 2px 0px 0px #111;
-  }
+.router-link-active {
+  box-shadow: 0px 2px 0px 0px #111;
 }
 
-@include media-breakpoint-down(md){
+
+@include media-breakpoint-down(lg) {
   .router-link-active {
     border-bottom: 1px solid #111;
   }
