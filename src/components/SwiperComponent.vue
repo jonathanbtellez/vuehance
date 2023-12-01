@@ -1,25 +1,36 @@
 <template>
-    <swiper :slidesPerView="1" :spaceBetween="30" :loop="true" :pagination="{
-        clickable: true,
-    }" :navigation="true" :modules="modules" class="mySwiper">
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-        <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
-    </swiper>
+    <div class="mySwiper">
+        <div class="swiper" id="mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <i class="fa-solid fa-angle-left shadow px-3 py-2"></i>
+            <i class="fa-solid fa-angle-right shadow px-3 py-2"></i>
+        </div>
+    </div>
 </template>
 <script setup>
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
+import { onMounted } from 'vue';
 
-// import required modules
-import { Pagination, Navigation } from 'swiper/modules';
-import { defineComponent } from 'vue';
-defineComponent({
-    Swiper,
-    SwiperSlide,
+onMounted(() => {
+    new window.Swiper("#mySwiper", {
+        slidesPerView: 7,
+        spaceBetween: 15,
+        loop: true,
+        navigation: {
+            nextEl: ".fa-angle-right",
+            prevEl: ".fa-angle-left",
+        },
+    });
 })
-const modules = [Pagination, Navigation]
+</script >
 
-</script>
+                             

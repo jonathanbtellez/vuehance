@@ -20,6 +20,7 @@
     }
 
     &__content {
+      z-index: 1000;
       position: absolute;
       background-color: white;
       top: 100%;
