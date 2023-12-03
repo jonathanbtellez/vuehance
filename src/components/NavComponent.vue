@@ -19,7 +19,7 @@
                     <router-link to="vacancies"
                         class="main-menu__item cross-center-grid text-vh-primary">Vacantes</router-link>
                 </nav>
-                <div class="w-100 gap-3 py-4 d-md-flex justify-content-end">
+                <div class="w-100 gap-3 py-2 d-md-flex justify-content-end">
                     <div>
                         <button class="border rounded-circle btn btn-outline-light"><i
                                 class="fa-solid fa-magnifying-glass"></i></button>

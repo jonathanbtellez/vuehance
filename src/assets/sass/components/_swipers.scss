@@ -1,33 +1,36 @@
-.mySwiper {
+.swiper {
     position: relative;
-    &::before{
+
+    &::before {
         position: absolute;
         content: "";
         height: 100%;
-        width: 100px;
+        width: 150px;
         top: 0;
         left: 0;
         z-index: 10;
         background: linear-gradient(to right, white, transparent 50%);
     }
-    &::after{
+
+    &::after {
         position: absolute;
         content: "";
         height: 100%;
-        width: 100px;
+        width: 150px;
         top: 0;
         right: 0;
         z-index: 10;
-        background: linear-gradient(to right, white, transparent 50%);
+        background: linear-gradient(to left, white, transparent 50%);
     }
 }
 
+
+
 [class*="fa-angle"] {
-    position: absolute;
+    display: none;
     top: 50%;
     font-size: 16px;
     cursor: pointer;
-    z-index: 500;
     background-color: rgba($color: white, $alpha: 0.8);
     border-radius: 50%;
     color: rgba($color: #000000, $alpha: 0.5);
@@ -35,24 +38,25 @@
     padding-right: 10px;
     transition: all .5s ease-in-out;
 
-
-
     &:hover {
         color: rgba($color: #000000, $alpha: 1.0);
         background-color: rgba($color: white, $alpha: 1.0);
     }
 
     &[class*='left'] {
+        z-index: 15;
         left: 1rem;
         transform: translateY(-50%);
     }
 
     &[class*='right'] {
+        z-index: 15;
         right: 1rem;
         transform: translateY(-50%);
     }
 
     @include media-breakpoint-up(lg) {
+        position: absolute;
 
         &[class*='left'] {
             left: 3.5rem;
@@ -70,21 +74,22 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65px;
-}
+    color: white;
+    height: 75px;
+    border-radius: 5px;
+    cursor: pointer;
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    &.swiper-slide-active,
+    &:hover {
+        &>div {
+            background: #0057FF;
 
-.swiper-button-prev,
-.swiper-button-next {
-    font-size: 12px;
+            &::before {
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+    }
 }

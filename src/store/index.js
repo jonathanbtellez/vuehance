@@ -1,14 +1,8 @@
 import { createStore } from 'vuex'
+import discoverStore from './discover'
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    discoverStore
   }
 })

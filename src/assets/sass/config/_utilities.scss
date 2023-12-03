@@ -6,60 +6,9 @@
     @include cross-center(false);
 }
 
-.btn-bars {
-    $size: 30px;
-    $h-bar: $size / 7;
-    position: relative;
-    width: $size;
-    height: $size;
-    background-color: white;
-    color: white;
-    cursor: pointer;
+.icon{
+    font-size: 14px;
+    color: rgba($color: gray, $alpha: .4);
+    opacity: .3;
 
-
-    &::before,
-    &::after {
-        transition: all linear .3s;
-        content: "";
-        position: absolute;
-        left: 50%;
-        width: 90%;
-        transform: translateX(-50%);
-        height: $h-bar ;
-        background: black;
-        border-radius: 5px;
-    }
-
-    &::before {
-        top: $h-bar;
-        box-shadow: 0 $h-bar*2 0 black;
-    }
-
-    &::after {
-        top: $h-bar*5;
-    }
-
-    &.active {
-
-        &::before,
-        &::after {
-            top: 50%;
-            left: 10%;
-            transform: translateY(-50%) translateX(-50%);
-            box-shadow: none;
-        }
-
-        &::before {
-            transform: rotate(45deg);
-        }
-
-        &::after {
-            transform: rotate(-45deg);
-        }
-    }
-
-
-    @include media-breakpoint-up(lg) {
-        display: none;
-    }
 }
