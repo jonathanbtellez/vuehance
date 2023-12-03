@@ -35,17 +35,14 @@ onMounted(() => {
         spaceBetween: 15,
         loop: true,
         breakpoints: {
-            // when window width is >= 320px
             320: {
                 slidesPerView: 2,
                 spaceBetween: 20
             },
-            // when window width is >= 480px
             480: {
                 slidesPerView: 3,
                 spaceBetween: 20
             },
-            // when window width is >= 640px
             920: {
                 slidesPerView: 7,
                 spaceBetween: 20
@@ -60,10 +57,6 @@ onMounted(() => {
             slideChange: function () {
                 categoryIndex.value = this.realIndex
             },
-            // click: function (swiper) {
-            //     console.log(swiper)
-            //     categoryIndex.value = swiper.clickedIndex
-            // },
         }
     })
 })

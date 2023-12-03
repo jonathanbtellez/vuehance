@@ -6,9 +6,52 @@
     @include cross-center(false);
 }
 
-.icon{
+.icon {
     font-size: 14px;
     color: rgba($color: gray, $alpha: .4);
     opacity: .3;
+}
+
+.pictures-container {
+    position: relative;
+
+    &::before {
+        width: 100%;
+        content: "";
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, white, transparent);
+        height: 150px;
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+.category-title {
+    font-size: 4rem;
+    font-weight: 900;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
+
+.category-text{
+    font-size: 1.5rem;
+    @include media-breakpoint-down(lg) {
+        font-size: 1rem;
+    }
+}
+
+.card-container{
+    width: 25%;
+    @include media-breakpoint-down(lg){
+        width: 50%;
+    }
+
+    @include media-breakpoint-down(md){
+        width: 100%;
+    }
 
 }

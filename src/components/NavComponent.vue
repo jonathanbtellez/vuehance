@@ -10,14 +10,13 @@
             </div>
             <div class="col main-menu d-md-flex justify-content-end">
                 <nav class="col-auto cross-center-grid fw-bold d-lg-flex gap-3 main-menu__content" id="menu">
-                    <router-link to="foryou" class="main-menu__item cross-center-grid text-vh-primary">Para
-                        ti</router-link>
+                    <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Para
+                        ti</a>
                     <router-link to="discover"
                         class="main-menu__item cross-center-grid text-vh-primary">Descubrir</router-link>
-                    <router-link to="hire" class="main-menu__item cross-center-grid text-vh-primary">Contratar</router-link>
-                    <router-link to="files" class="main-menu__item cross-center-grid text-vh-primary">Archivos</router-link>
-                    <router-link to="vacancies"
-                        class="main-menu__item cross-center-grid text-vh-primary">Vacantes</router-link>
+                    <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Contratar</a>
+                    <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Archivos</a>
+                    <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Vacantes</a>
                 </nav>
                 <div class="w-100 gap-3 py-2 d-md-flex justify-content-end">
                     <div>
@@ -32,7 +31,7 @@
                             class="btn btn-outline-vh-info cross-center-grid text-primary px-2  fw-semibold rounded-pill">Iniciar
                             sesíon</button>
                         <button
-                            class="btn btn-primary cross-center-grid text-vh-info px-2 fw-semibold rounded-pill">Registarse</button>
+                            class="btn btn-primary cross-center-grid text-vh-info px-2 fw-semibold rounded-pill">Registrase</button>
                     </div>
                 </div>
             </div>
@@ -52,4 +51,3 @@ onMounted(() => {
 })
 
 </script>
-<style></style>

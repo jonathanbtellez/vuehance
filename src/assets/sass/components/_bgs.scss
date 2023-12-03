@@ -23,3 +23,12 @@
         position: relative
     }
 }
+
+.bg-image-card{
+    background-position: center;
+    background-size: cover;
+    background-image: var(--image);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}

@@ -27,7 +27,7 @@
 
 
 [class*="fa-angle"] {
-    display: none;
+    position: absolute;
     top: 50%;
     font-size: 16px;
     cursor: pointer;
@@ -56,7 +56,6 @@
     }
 
     @include media-breakpoint-up(lg) {
-        position: absolute;
 
         &[class*='left'] {
             left: 3.5rem;

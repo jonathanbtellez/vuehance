@@ -25,7 +25,7 @@ export default [
     }, {
         title: 'Movimiento',
         description: 'Mira sorprendentes cortos, películas de gráficos animados y archivos GIF animados con un entretenimiento inacabable',
-        tags: ['Todas las categorias', 'Graficos animados', 'Cine', 'Conjunto, accesorios y vestuario', 'GIT'],
+        tags: ['Todas las categorias', 'Graficos animados', 'Cine', 'Conjunto, accesorios y vestuario', 'GIF'],
         image: 'https://mir-s3-cdn-cf.behance.net/projects/404/c31748180921843.Y3JvcCw4OTQsNzAwLDIyOCww.jpg'
     }, {
         title: 'Arquitectura',
