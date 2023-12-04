@@ -84,7 +84,7 @@
     &.swiper-slide-active,
     &:hover {
         &>div {
-            background: #0057FF;
+            background: $primary;
 
             &::before {
                 background-color: rgba(0, 0, 0, 0);

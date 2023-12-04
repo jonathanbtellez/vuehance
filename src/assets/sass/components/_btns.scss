@@ -66,11 +66,11 @@
     font-weight: bold;
 
     &--active{
-        color: #0057FF;
+        color: $primary;
     }
 
     &:hover {
-        color: #0057FF;
+        color: $primary;
     }
 
     @include media-breakpoint-down(lg){
