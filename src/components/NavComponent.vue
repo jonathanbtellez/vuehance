@@ -10,8 +10,8 @@
             </div>
             <div class="col main-menu d-md-flex justify-content-end">
                 <nav class="col-auto cross-center-grid fw-bold d-lg-flex gap-3 main-menu__content" id="menu">
-                    <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Para
-                        ti</a>
+                    <router-link to="foryou" class="main-menu__item cross-center-grid text-vh-primary">Para
+                        ti</router-link>
                     <router-link to="discover"
                         class="main-menu__item cross-center-grid text-vh-primary">Descubrir</router-link>
                     <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Contratar</a>

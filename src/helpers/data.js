@@ -15,7 +15,7 @@ export default [
         title: 'Ilustracion',
         description: 'Mira el trabajo de ilustración en sus muchas formas, incluido todo, desde blocs de dibujo, pasando por murales, hasta diseño de personajes y mucho más',
         tags: ['Todas las categorias', 'Ilustracion', 'Diseño de personajes', 'Arte digital', 'Street Art', 'Dibujo', 'Cómic', 'T-shirt', 'Diseño de superficies'],
-        image: 'https://mir-s3-cdn-cf.behance.net/projects/404/ac2b58184791897.655c09576840b.jpg'
+        image: 'https://mir-s3-cdn-cf.behance.net/projects/404/0deb9e149819353.Y3JvcCwxMDA3LDc4OCwyODYsMA.jpg'
     },
     {
         title: 'UI/UX',
@@ -41,7 +41,7 @@ export default [
         title: 'Moda',
         description: 'Explora la moda más actual que existe hoy en día en este campo, desde el estilismo, pasando por los modelos, hasta el maquillaje',
         tags: ['Todas las categorias', 'Textile design', 'Moda', 'Ropa', 'Maquillaje', 'Modelado', 'Diseño de moda'],
-        image: 'https://mir-s3-cdn-cf.behance.net/projects/404/ac2b58184791897.655c09576840b.jpg'
+        image: 'https://mir-s3-cdn-cf.behance.net/projects/404/4d0dbc183604753.Y3JvcCwxMjYwLDk4NiwzNCwyOTA.jpg'
     }
 
 ]

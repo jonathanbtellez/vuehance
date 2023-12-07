@@ -1,4 +1,5 @@
 <template>
+
     <div class="container cross-center-grid">
         <div class="d-flex  flex-wrap  justify-content-center my-4 gap-3 flex-column flex-md-row">
             <button v-for="tag in category.tags" :key="tag.name" class="tag-btn shadow-sm"
