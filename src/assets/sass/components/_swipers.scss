@@ -22,6 +22,18 @@
         z-index: 10;
         background: linear-gradient(to left, white, transparent 50%);
     }
+
+    &__progress {
+        height: min(70vh, 650px);
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none;
+        }
+    }
 }
 
 
@@ -94,19 +106,24 @@
 
     &__progress {
         height: 100%;
-        &.swiper-slide-active>div{
-            background: none;
-        }
+        background: var(--image);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0px;
     }
 }
 
-
-.swiper__progress {
-    height: min(70vh, 650px);
+.swiper-container__progress{
+    position: relative;
+    width: 100px;
+    height: 50px;
 }
+
+
 
 .swiper-pagination__progress {
     bottom: 0;
     top: auto;
-    background: var(--image);
+    color: $primary;
 }
