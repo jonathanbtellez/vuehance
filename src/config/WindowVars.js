@@ -6,7 +6,6 @@ export default function () {
         window.Swiper = Swiper
         window.bootstrap = bootstrap
 
-
     } catch (error) {
         console.error(error)
     }

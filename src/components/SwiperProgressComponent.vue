@@ -27,7 +27,6 @@ const fetch = async () => {
     try {
         const { data } = await unsplashApi('/photos')
         pictures.value = data
-        console.log(pictures.value);
     } catch (error) {
         console.log(error)
     }
@@ -50,7 +49,7 @@ onMounted(() => {
             prevEl: ".swiper-button-prev",
         },
     }).controller.control = fraction
-
+    console.log(fraction)
     fetch();
 })
 

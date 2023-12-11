@@ -24,7 +24,7 @@
     }
 
     &__progress {
-        height: min(70vh, 650px);
+        height: 650px;
 
         &::after {
             display: none;
