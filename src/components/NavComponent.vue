@@ -10,11 +10,11 @@
             </div>
             <div class="col main-menu d-md-flex justify-content-end">
                 <nav class="col-auto cross-center-grid fw-bold d-lg-flex gap-3 main-menu__content" id="menu">
-                    <router-link to="foryou" class="main-menu__item cross-center-grid text-vh-primary">Para
+                    <router-link :to="{name:'foryou'}" class="main-menu__item cross-center-grid text-vh-primary">Para
                         ti</router-link>
-                    <router-link to="discover"
+                    <router-link :to="{name:'discover'}"
                         class="main-menu__item cross-center-grid text-vh-primary">Descubrir</router-link>
-                    <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Contratar</a>
+                    <router-link :to="{name:'flexGrid'}" class="main-menu__item cross-center-grid text-vh-primary">Flex - Grid</router-link>
                     <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Archivos</a>
                     <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Vacantes</a>
                 </nav>

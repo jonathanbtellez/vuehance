@@ -64,6 +64,7 @@
     padding-right: 1rem;
     border: 1px solid rgba($color: black, $alpha: .1);
     font-weight: bold;
+    color: black;
 
     &--active{
         color: $primary;
@@ -77,4 +78,8 @@
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
     }
+}
+
+.router-link-exact-active{
+    color: $primary;
 }

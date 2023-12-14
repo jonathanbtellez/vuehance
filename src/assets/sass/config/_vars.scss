@@ -19,3 +19,7 @@ $custom-colors: (
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+[class*=swiper]{
+  --swiper-theme-color: $primary
+}

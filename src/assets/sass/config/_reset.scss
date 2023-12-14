@@ -2,3 +2,11 @@
 .swiper-pagination-progressbar.swiper-pagination-horizontal {
     top: auto;
 }
+
+a{
+    text-decoration: none;
+}
+
+.router-link-active, .router-link-exact-active {
+    box-shadow: none;
+}

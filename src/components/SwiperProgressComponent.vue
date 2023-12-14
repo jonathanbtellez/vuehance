@@ -49,7 +49,6 @@ onMounted(() => {
             prevEl: ".swiper-button-prev",
         },
     }).controller.control = fraction
-    console.log(fraction)
     fetch();
 })
 
