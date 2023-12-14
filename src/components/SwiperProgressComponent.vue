@@ -1,7 +1,7 @@
 <template>
     <div class="swiper swiper__progress mt-1" id="mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide__progress swiper-slide" v-for="picture in pictures" :key="picture.vue"
+            <div class="swiper-slide__progress swiper-slide" v-for="picture in pictures" :key="picture.id"
                 :style="{ '--image': `url(${picture.urls.regular})` }">
             </div>
         </div>

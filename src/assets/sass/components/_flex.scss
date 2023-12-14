@@ -1,0 +1,29 @@
+.flex {
+    display: flex;
+    box-shadow: $box-shadow;
+    gap: .2rem;
+    width: 48%;
+    margin: auto;
+    height: 200px;
+    padding: .2rem;
+
+    &__start {
+        align-items: start;
+    }
+
+    &__end {
+        align-items: end;
+    }
+
+    &__center {
+        align-items: center;
+    }
+
+    &__stretch {
+        align-items: stretch;
+    }
+
+    &__baseline {
+        align-items: baseline;
+    }
+}

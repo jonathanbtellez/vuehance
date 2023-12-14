@@ -4,9 +4,7 @@
             <router-link :to="{ name: 'flex' }" class="tag-btn">Flex</router-link>
             <router-link :to="{ name: 'grid' }" class="tag-btn">Grid</router-link>
         </div>
-        <transition>
-            <RouterView />
-        </transition>
+        <RouterView />
     </div>
 </template>
 <script setup>
