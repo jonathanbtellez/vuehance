@@ -1,0 +1,73 @@
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header"
+                          "menu"
+                          "hero"
+                          "hero"
+                          "hero"
+                          "main"
+                          "main"
+                          "main"
+                          "banner"
+                          "banner"
+                          "extra"
+                          "extra"
+                          "image"
+                          "image";
+    @include media-breakpoint-up(md){
+        grid-template-areas: "header header header header"
+                             "hero hero hero hero"
+                             "hero hero hero hero"
+                             "hero hero hero hero"
+                             "hero hero hero hero"
+                             "menu main main main"
+                             "menu main main main"
+                             "menu main main main"
+                             "menu banner banner banner"
+                             "menu banner banner banner"
+                             "menu extra extra image"
+                             "menu extra extra image"
+    }
+
+    @include media-breakpoint-up(lg) {
+        grid-template-areas: "header header menu menu menu menu menu menu"
+                             "hero hero hero hero hero hero hero hero"
+                             "hero hero hero hero hero hero hero hero"
+                             "hero hero hero hero hero hero hero hero"
+                             "hero hero hero hero hero hero hero hero"
+                             "hero hero hero hero hero hero hero hero"
+                             "hero hero hero hero hero hero hero hero"
+                             "main main main main main main image image"
+                             "main main main main main main image image"
+                             "main main main main main main extra extra"
+                             "main main main main main main extra extra"
+                             "banner banner banner banner banner banner banner banner"
+                             "banner banner banner banner banner banner banner banner"
+                             
+    }
+
+
+}
+
+.grid-header{
+    grid-area: header;
+}
+.grid-menu{
+    grid-area: menu;
+}
+.grid-hero{
+    grid-area: hero;
+}
+.grid-main{
+    grid-area: main;
+}
+.grid-extra{
+    grid-area: extra;
+}
+.grid-banner{
+    grid-area: banner;
+}
+.grid-image{
+    grid-area: image;
+}

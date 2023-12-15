@@ -39,7 +39,6 @@ const fetch = async () => {
                 'per_page': 3
             }
         })
-        console.log(data)
         pictures.value = data
     } catch (error) {
         console.log(error)

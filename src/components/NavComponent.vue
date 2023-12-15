@@ -14,7 +14,7 @@
                         ti</router-link>
                     <router-link :to="{name:'discover'}"
                         class="main-menu__item cross-center-grid text-vh-primary">Descubrir</router-link>
-                    <router-link :to="{name:'flexGrid'}" class="main-menu__item cross-center-grid text-vh-primary">Flex - Grid</router-link>
+                    <router-link :to="{name:'flex'}" class="main-menu__item cross-center-grid text-vh-primary">Flex - Grid</router-link>
                     <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Archivos</a>
                     <a href="#" class="main-menu__item cross-center-grid text-vh-primary">Vacantes</a>
                 </nav>
